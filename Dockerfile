@@ -2,10 +2,19 @@
 FROM nginx:alpine
 
 # Set the working directory in the container
-WORKDIR /usr/frontend
+WORKDIR /usr/share/nginx/html
 
-# Copy the HTML, CSS, and JavaScript files into the container
-COPY . /usr/frontend/
+# Copy all HTML files from the local directory into the container
+COPY ./*.html ./
+
+# Copy all CSS files from the css folder into the container
+COPY ./css/*.css ./css/
+
+# Copy all JavaScript files from the js folder into the container
+COPY ./js/*.js ./js/
+
+# Remove the default NGINX welcome page
+RUN rm -f /usr/share/nginx/html/index.html
 
 # Expose port 80 to allow external access
 EXPOSE 80
