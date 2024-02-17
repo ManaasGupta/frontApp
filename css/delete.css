@@ -1,0 +1,15 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.buttonlist {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    margin-right: 20px;
+}

@@ -1,0 +1,36 @@
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+table {
+    max-width: 80%;
+}
+
+.dark {
+    color: whitesmoke !important;
+    background-color: black !important;
+}
+
+.link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 50px;
+    border-radius: 15px;
+    transition: 0.3s;
+    width: 200px
+}
+
+button:hover {
+    text-decoration: none;
+    background-color: rgb(62, 75, 75);
+    color: white;
+    border: none;
+}

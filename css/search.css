@@ -1,0 +1,56 @@
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sorting {
+    display: flex;
+    width: 80%;
+}
+
+.sorting>.sort {
+    background-color: rgb(238, 236, 236);
+    width: 15%;
+    padding: 10px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.sorting>.value {
+    width: 80%;
+}
+
+.sorting>.valueSubmit {
+    width: 15%;
+    border-radius: 0px 15px 15px 0px;
+}
+
+table {
+    max-width: 80%;
+}
+
+.auxbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.auxbtn button {
+    padding: 10px 30px;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#hiddenInfo {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-left: 200px;
+    margin-top: 20px;
+}

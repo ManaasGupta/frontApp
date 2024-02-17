@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Records</title>
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Add your custom CSS link -->
+    <link href="css/search.css" rel="stylesheet" />
+</head>
+
+<body class="lead">
+    <h1 class="text-center mt-3 mb-3">Search Records</h1>
+    <div class="container mt-4">
+        <form id="myform">
+            <div class="sorting mx-auto">
+                <select id="sort" name="myDropdown" class="sort" required>
+                    <option value="so" disabled selected>Select</option>
+                    <option value="personId">Person ID</option>
+                    <option value="firstName">First Name</option>
+                    <option value="lastName">Last Name</option>
+                    <option value="email">Email</option>
+                    <option value="contactNumber">Contact</option>
+                </select>
+                <input type="text" id="myInput" class="value" name="myInput" placeholder="Enter Value">
+                <button type="submit" class="valueSubmit btn btn-outline-success" id="valueSubmit">Search</button>
+            </div>
+        </form>
+    </div>
+    <div class="auxbtn mx-auto">
+        <div>
+            <button id="returnHome" class="btn btn-outline-primary btn-lg">Home</button>
+        </div>
+        <div>
+            <button id="clear" class="btn btn-outline-danger btn-lg">Clear</button>
+        </div>
+    </div>
+
+    <div>
+        <p id="hiddenPara" class="d-none text-center mt-4 mb-4 text-white bg-danger"></p>
+    </div>
+
+    <div class="d-none" id="hiddenInfo">
+        <table id="resultTable" class="table table-striped table-hover table-bordered">
+            <!-- Table content will be dynamically added using JavaScript -->
+            <thead>
+                <th scope="col">Person ID</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Contact</th>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+    <script src="js/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

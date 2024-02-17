@@ -1,0 +1,73 @@
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 200px;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.black {
+    /* background-color: rgb(36, 34, 34); */
+    background-color: rgb(225, 235, 235);
+}
+
+.submit {
+    width: 300px;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 50px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    text-decoration: none;
+    background-color: rgb(62, 75, 75);
+    color: white;
+    border: none;
+}
+
+.red {
+    background-color: red !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    border: 1px solid black;
+}
+
+.form label {
+    border: 1px solid black;
+}
