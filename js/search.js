@@ -18,23 +18,23 @@ myForm.addEventListener("submit", (ev) => {
     let apiUrl = null; // Use let instead of const
     switch (selectedOption) {
         case "personId":
-            apiUrl = "http://localhost:9090/api/person/";
+            apiUrl = "http://localhost:9091/api/v1/student/";
             fetchFromApi(apiUrl, optionValue);
             break;
         case "firstName":
-            apiUrl = "http://localhost:9090/api/person/firstName/";
+            apiUrl = "http://localhost:9091/api/v1/student/firstname/";
             fetchFromApi(apiUrl, optionValue);
             break;
         case "lastName":
-            apiUrl = "http://localhost:9090/api/person/lastName/";
+            apiUrl = "http://localhost:9091/api/v1/student/lastname/";
             fetchFromApi(apiUrl, optionValue);
             break;
         case "email":
-            apiUrl = "http://localhost:9090/api/person/email/";
+            apiUrl = "http://localhost:9091/api/v1/student/email/";
             fetchFromApi(apiUrl, optionValue);
             break;
         case "contactNumber":
-            apiUrl = "http://localhost:9090/api/person/contact/";
+            apiUrl = "http://localhost:9091/api/v1/student/contactnumber/";
             fetchFromApi(apiUrl, optionValue);
             break;
     }

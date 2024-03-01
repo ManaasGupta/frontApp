@@ -5,7 +5,7 @@ document.getElementById('deleteForm').addEventListener('submit', function (event
     var personId = document.getElementById('personId').value;
 
     // Make a DELETE request using fetch API
-    fetch('http://localhost:9090/api/person/' + personId, {
+    fetch('http://localhost:9091/api/v1/student/' + personId, {
         method: 'DELETE',
     })
         .then(response => {

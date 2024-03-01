@@ -14,7 +14,7 @@ myForm.addEventListener("submit", ev => {
 
 
 
-    fetch("http://localhost:9090/api/person/" + personId, {
+    fetch("http://localhost:9091/api/v1/student/" + personId, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
